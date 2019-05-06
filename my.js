@@ -29,10 +29,12 @@ function func_02(){
 }
 
 function func_03(){
+  var count= 0;
   var n = +prompt("3. поиска количества нечётных цифр в целом числе N, N= ?");
-  var sum = 0;
-   for (i=1; i<=n; i=i+2){ 
-    sum += i*i*i; 
+  // Крайнюю цифру делим на 2, если четная то без остатка
+  while (n>0) {
+    if (n%2==0) count+=1;
+    n=Math.trunc(n/10);  
   }
-  alert("Число = " + sum) ;
+  alert("Число = " + count);
 }
