@@ -40,7 +40,7 @@ function func_03(){
 }
 
 function func_04(){
-  var n = +prompt("Поиск минимальной цифры в целом числе N., N= ?");
+  var n = +prompt("4. Поиск минимальной цифры в целом числе N., N= ?");
   n=Math.abs(n);
   var m = 9;
   //if (n%10<m) m=n%10
@@ -49,5 +49,18 @@ function func_04(){
     n=Math.trunc(n/10);  
   }
   alert("Число = " + m);
+}
 
+//VuXrA9GDsFH5Jrj
+
+function func_05(){
+  var n = +prompt("4. Поиск минимальной цифры в целом числе N., N= ?");
+  n=Math.abs(n);
+  var m = 9;
+  //if (n%10<m) m=n%10
+  while (n>0) {
+    if (n%10<m) m=n%10;
+    n=Math.trunc(n/10);  
+  }
+  alert("Число = " + m);
 }
