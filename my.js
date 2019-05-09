@@ -1,5 +1,5 @@
 //Случайное число
-function func_01_(){
+function func_00(){
   var diap = 9; 	
   if (confirm("Хотите сгенерировать случайное число ?")) { 
     x = Math.floor(Math.random() * diap); 
@@ -65,3 +65,33 @@ function func_05(){
   }
   alert("Число = " + count);
 }
+
+function func_06() {
+  //6. поиска минимального элемента в одномерном массиве
+  //
+  //Размерность массива и диапазон (от/до) их целочисленных значений 
+  //вводит пользователь, элементы генерируются программой.
+  
+  //var k = +prompt("Размерность массива?");
+  var k = 3;
+  var min=0;
+  var max=9;
+  var m=new Array(k);
+  for (let i=0; i<m.length; i++) { 
+    m[i]=Math.floor(Math.random() * max) ;
+  }
+  min= max
+  for (let i=0; i<m.length; i++) { 
+    if (m[i]<min) min=m[i];
+  }
+  //alert("Число = " + m);
+  alert("Число = " + min);
+}
+
+function func_07() {
+  
+}
+
+
+
+
