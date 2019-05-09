@@ -89,9 +89,57 @@ function func_06() {
 }
 
 function func_07() {
+  //7. поиска количества элементов одномерного массива меньших, 
+  //чем среднее арифметическое значение всех эле-ментов массива
+  var k = 4;
+  var arrmin=0;
+  var arrmax=9;
+  var arr=new Array(k);
   
+  for (let i=0; i<arr.length; i++) { 
+    arr[i]=Math.floor(Math.random() * arrmax);
+  }
+
+  var sum=0;
+  for (let i=0; i<arr.length; i++) { 
+    sum +=arr[i];
+  }
+
+  alert("Число = " + sum/arr.length +" "+ arr);
 }
 
+function func_08() {
+//8. сортировки одномерного массива по убыванию
+//Используйте любой метод сортировки
+
+var k = 4;
+var arrmin=0;
+var arrmax=9;
+var arr=new Array(k);
+
+for (let i=0; i<arr.length; i++) { 
+  arr[i]=Math.floor(Math.random() * arrmax);
+}
+
+//alert("Число = " + " "+ arr);
+//arr.sort();
+
+for (let i=0; i<arr.length; i++) { 
+  arr[i]=Math.floor(Math.random() * arrmax);
+}
+
+for (var i = 0, endI = arr.length - 1; i < endI; i++) {
+  for (var j = 0, endJ = endI - i; j < endJ; j++) {
+      if (arr[j] > arr[j + 1]) {
+          var swap = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = swap;
+      }
+  }
+}
+
+alert("Число = " + " "+ arr);
+}
 
 
 
